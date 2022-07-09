@@ -1,0 +1,325 @@
+* {
+	box-sizing: border-box;
+}
+/*
+html {
+	scroll-behavior: smooth;
+}*/
+body {
+	font-family: 'roboto', sans-serif;
+	margin: 0;
+
+}
+h1 {
+	font-size: 3.5em;
+}
+h2 {
+	font-size: 2.7em;
+}
+h3 {
+	font-size: 2em;
+}
+p{
+	font-size: 1.25em;
+}
+ul{
+	list-style: none;
+}
+.color-acento{
+	color: darkviolet;
+}
+button {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
+	color: white;
+	background-color: blueviolet;
+}
+
+button:hover {
+	background-color: rgb(181, 33, 165);
+}
+
+.container {
+	max-width: 1400px;
+	margin: auto;
+}
+
+header {
+	background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+	margin: 0;
+	padding: 25px 30px;
+	font-weight: bold;
+	color: darkviolet;
+	font-size: 1.6em;
+}
+
+header .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header nav {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+header a {
+	padding: 5px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+header a:hover {
+	color: darkviolet;
+}
+
+#hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 90vh;
+	color: white;
+	background-image: linear-gradient(
+		0deg,
+		 rgba(0, 0, 0, 0.5),
+		 rgba(0, 0, 0, 0.5)
+	)
+	,url("img/img1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#hero {
+	color: white;
+}
+
+#hero button {
+	font-size: 1.75em;
+}
+#soy-arley {}
+
+#soy-arley .container {
+	padding: 200px 12px ;
+	text-align: center;
+}
+
+#misConocimientos {
+	background-color: rgb(30, 30, 30);
+	color: white;
+	text-align: center;
+}
+
+#misConocimientos .container{
+	padding: 100px 0px;
+}
+
+#misConocimientos h2{
+	margin-top: 0;
+	font-size: 3.2em;
+}
+
+#misConocimientos p {
+	display: none;
+}
+
+#misConocimientos .carta {
+	background-size: cover;
+	background-position: center center;
+	padding:50px;
+	margin: 20px;
+	border-radius: 5px;
+
+}
+
+.carta:first-child {
+	background-image: linear-gradient(
+		0deg,
+		 rgba(0, 0, 0, 0.5),
+		 rgba(0, 0, 0, 0.5)
+	)
+	,url("img/img4.jpg");
+	
+}
+.carta:nth-child(2){
+	background-image: linear-gradient(
+		0deg,
+		 rgba(0, 0, 0, 0.5),
+		 rgba(0, 0, 0, 0.5)
+	)
+	,url("img/img5.jpg");
+	
+}
+.carta:nth-child(3){
+	background-image: linear-gradient(
+		0deg,
+		 rgba(0, 0, 0, 0.5),
+		 rgba(0, 0, 0, 0.5)
+	)
+	,url("img/img6.jpg");
+}
+
+#caracteristicas .container{
+	text-align: center;
+	padding: 250px 12px;
+}
+
+#caracteristicas li {
+	margin: 15px 0px;
+	font-weight: bold;
+}
+
+#Interesate {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-color: rgb(30, 30, 30);
+	color: white;
+	height: 80vh;
+}
+
+#Interesate h2 {
+	font-size: 9vw;
+}
+
+#Interesate button {
+	font-size: 5vw;
+	
+}
+
+footer {
+	background-color: rgb(230, 230, 230);
+}
+
+footer p {
+	margin: 0;
+	padding: 12px;
+	color: rgb(100, 100, 100);
+}
+
+footer .container{
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width:  1070px){
+	header{
+		position: fixed;
+		width: 100%;
+	}
+
+	header .container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	header nav {
+		flex-direction: row;
+		padding-bottom: 0; 
+		padding-right: 20px;
+	}
+
+	#hero h1 {
+		font-size: 5em;
+	}
+
+	#soy-arley .container {
+		display: flex;
+		justify-content: space-evenly;
+
+	}
+
+	#soy-arley .texto {
+		width: 50%;
+		max-width: 600px;
+		text-align: initial;
+		padding-left: 30px;
+		padding: 0px 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#soy-arley .img-container{
+		background-image: url("img/img2.jpg");
+		background-size: cover;
+		background-position: center center;
+		height: 400px;
+		width: 300px;
+
+	}
+	#soy-arley h2 {
+		margin-top: 0px;
+	}
+	
+	#misConocimientos h2 {
+		font-size: 4em;
+	}
+	#misConocimientos .lenguajes{
+		display: flex;
+		justify-content: center;
+	}
+
+	#misConocimientos p{
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	#misConocimientos h3 {
+		margin-top: 0px;
+	}
+
+	#misConocimientos .carta {
+		padding: 50px;
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 1.0);
+	}
+
+	#caracteristicas {
+		background-image: url(img/img3.jpg);
+		background-repeat: no-repeat;
+		background-size: 500px 400px;
+		background-position: calc(100vw - 700px) 120px;
+	}
+
+	#caracteristicas .container {
+		text-align: initial;
+		
+	}
+
+	#caracteristicas ul {
+		margin-left: 100px;
+	}
+
+	#Interesate h2 {
+		font-size: 5em;
+	}
+
+	#Interesate button {
+		font-size: 2em;
+	}
+
+	footer .container {
+		align-items: flex-end;
+	}
+}
+
+@media (min-width:  1200px){
+	#caracteristicas {
+		background-position-x: calc(100vw - 800px);
+	}
+}
